@@ -31,7 +31,6 @@ class Home extends React.Component{
             }
         });
 
-
         if(type === "upcoming"){
             this.setState({ upcomingMovies: res.data.results.splice(0, 8) });
         } else if(type === "top"){

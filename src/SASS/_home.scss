@@ -38,6 +38,7 @@
 
 .inCinema__wrapper{
     position: relative;
+    overflow-x: hidden;
 
     .inCinema{
         position: absolute;
@@ -47,10 +48,28 @@
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
+        
 
         img{
             cursor: pointer;
+            width: 18%;
             transition: transform .3s;
+            height: 11rem;
+            object-fit: cover;
+
+            @include respond(tab-port){
+                width: 25%;
+            }
+
+            @include respond(tab-land){
+                width: 18%;
+            }
+
+            @include respond(phone){
+                width: 30%;
+                height: 15rem;
+            }
+            
 
             &:hover{
                transform: scale(1.1) translateY(-3px);

@@ -10,15 +10,15 @@ class Video extends React.Component{
         isModalOpen: false
     }
 
-    componentDidMount(){
-        // this.getYoutubeVideoKey(this.props.movieId);
-    }
-
     static getDerivedStateFromProps(nextProps, prevState) {
         if(nextProps.movieId !== prevState.movieId){
             return { movieId: nextProps.movieId }
         }
         else return null;
+    }
+
+    componentDidMount(){
+        // this.getYoutubeVideoKey(this.props.movieId);
     }
 
     componentDidUpdate(prevProps, prevState){
