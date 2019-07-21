@@ -52,22 +52,24 @@
 
         img{
             cursor: pointer;
-            width: 18%;
+            width: 17%;
             transition: transform .3s;
             height: 11rem;
             object-fit: cover;
 
-            @include respond(tab-port){
-                width: 25%;
-            }
-
             @include respond(tab-land){
-                width: 18%;
+                width: 16%;
+                height: 12rem;
+            }
+            
+            @include respond(tab-port){
+                width: 17%;
+                height: 10rem;
             }
 
             @include respond(phone){
                 width: 30%;
-                height: 15rem;
+                height: 12rem;
             }
             
 
