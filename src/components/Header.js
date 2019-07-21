@@ -21,7 +21,7 @@ export const HomeHeader = ({selectedMovie}) => {
                     <p style={{ padding: "2rem 0" }}>{selectedMovie.overview}</p>
                                                          
                 </div>
-                {/* <Video movieId={selectedMovie.id} />  */}
+                <Video movieId={selectedMovie.id} /> 
             </div>
         }
         </React.Fragment>
