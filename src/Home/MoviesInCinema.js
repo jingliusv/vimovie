@@ -8,7 +8,7 @@ const MoviesInCinema = ({ moviesInCinema, selectedMovie, onSelectMovie }) => {
            
             <div className="ui small images container inCinema">
                 {moviesInCinema.map(movie => (
-                <img key={movie.id} src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} alt={movie.title} onClick={() => {onSelectMovie(movie.id);}} />
+                    <img key={movie.id} src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} alt={movie.title} onClick={() => {onSelectMovie(movie.id);}} />
                 ))}
             </div>   
         </div>       
