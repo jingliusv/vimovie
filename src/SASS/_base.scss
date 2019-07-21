@@ -105,4 +105,19 @@ span{
     }
 }
 
+iframe{
+    @include respond(tab-land){
+        width: 640px; 
+    }
+
+    @include respond(tab-port){
+        width: 400px;
+        height: auto;
+    }
+
+    @include respond(phone){
+        width: 300px;
+        height: auto;
+    }
+}
 
