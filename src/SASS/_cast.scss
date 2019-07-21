@@ -16,7 +16,20 @@
     img{
         width: calc(20vw - 10px);
         height: 35rem;
-        object-fit: cover;        
+        object-fit: cover; 
+        
+        @include respond(tab-land){
+            height: 30rem;
+        }
+        
+        @include respond(tab-port){
+            height: 25rem;
+        }
+
+        @include respond(phone){
+            height: 16rem;
+        }
+        
     }
 }
 

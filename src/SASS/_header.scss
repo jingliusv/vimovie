@@ -13,6 +13,12 @@
         top: 50%;
         left: 32%;
         transform: translate(-32%, -50%);
+
+        p{
+            @include respond(phone-land){
+                display: none;
+            }
+        }
     }
 
     .header__icon{
