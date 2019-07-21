@@ -1,0 +1,23 @@
+.cast-slider{
+    position: relative;
+}
+
+.cast-wrapper{
+    display: flex;
+    justify-content: flex-start;
+
+    .cast-box{
+        padding: 0 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img{
+        width: calc(20vw - 10px);
+        height: 35rem;
+        object-fit: cover;        
+    }
+}
+
+
+

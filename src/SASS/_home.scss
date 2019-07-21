@@ -1,0 +1,77 @@
+// inCinema
+
+.img-box{
+    position: relative;
+
+    .content-box{
+        position: absolute;
+        z-index: 99;
+        color: #F7FFF7;
+        top: 50%;
+        left: 50%;
+        transform: translate(-75%, -50%);
+
+        span{
+            color: #FF6B6B;
+            letter-spacing: 1.5px;
+
+            i{
+                color: #FF6B6B;
+                padding-right: 2rem;
+                padding-bottom: 5px;
+                font-size: 2rem;
+            }
+        }
+
+        p{
+            font-size: 1.7rem;
+            line-height: 1.5;
+            font-weight: 300;
+            padding:  1rem 0;
+            padding-top: 2rem;
+        }
+    }
+
+    
+}
+
+
+.inCinema__wrapper{
+    position: relative;
+
+    .inCinema{
+        position: absolute;
+        bottom: 1rem;
+        z-index: 60;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+
+        img{
+            cursor: pointer;
+            transition: transform .3s;
+
+            &:hover{
+               transform: scale(1.1) translateY(-3px);
+            }
+        }
+    }
+}
+
+// upcoming
+.upcoming{
+    
+    img{
+        transition: all .2s linear;
+        cursor: pointer;
+
+        &:hover{
+            transform-origin: bottom;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+        }
+    }
+}
+
+

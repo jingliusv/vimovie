@@ -1,0 +1,22 @@
+// movie detail
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__content{
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        left: 32%;
+        transform: translate(-32%, -50%);
+    }
+
+    .header__icon{
+        color: #FF6B6B;
+        font-size: 2rem;
+    }
+}

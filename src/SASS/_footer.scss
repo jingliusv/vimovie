@@ -1,0 +1,30 @@
+//footer
+.footer{
+    margin-top: 4.5rem;
+    height: 6rem;
+    background: rgba(black, .3);
+}
+
+.footer-nav{
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: #434343;
+    font-size: 1.3rem;
+    line-height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30%;
+
+    .copy{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socials{
+        font-size: 2rem;
+        position: relative;
+
+    }
+}
