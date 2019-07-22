@@ -9,7 +9,7 @@ export const HomeHeader = ({selectedMovie}) => {
             <div 
                 className="header" 
                 style={{
-                    backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, .8) 28%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .1)), url(https://image.tmdb.org/t/p/original/${selectedMovie.backdrop_path})`
+                    backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, .8) 28%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .1)), url(https://image.tmdb.org/t/p/w1280/${selectedMovie.backdrop_path})`
                 }}
             >   
                 <div className="header__content">                    
@@ -32,7 +32,7 @@ export const Header = ({movie, movieId}) => {
     const { title, overview, backdrop_path, vote_average } = movie;
 
     const headerStyle = {
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, .8) 28%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .1)), url(https://image.tmdb.org/t/p/original/${backdrop_path})`
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, .8) 28%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .1)), url(https://image.tmdb.org/t/p/w1280/${backdrop_path})`
     }
 
     return (
