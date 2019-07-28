@@ -18,7 +18,9 @@ class Video extends React.Component{
     }
 
     componentDidMount(){
-        // this.getYoutubeVideoKey(this.props.movieId);
+        if(this.props.movieId){
+            this.getYoutubeVideoKey(this.props.movieId);
+        }
     }
 
     componentDidUpdate(prevProps, prevState){
