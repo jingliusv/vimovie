@@ -71,7 +71,7 @@ section{
 }
 
 .content{
-    // min-height: 100vh;
+    min-height: calc(100vh - 10rem);
 }
 
 .overlay{
