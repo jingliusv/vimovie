@@ -45,7 +45,6 @@ class MoviePage extends React.Component{
             params: {
                 api_key: process.env.REACT_APP_THE_MOVIE_DB_API_KEY,
                 language: 'sv-SE',
-                region: 'se',
                 page: `${startPage}`,
                 query: `${query}`
             }
