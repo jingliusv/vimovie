@@ -4,6 +4,7 @@ import { Loader } from '../components/Loader';
 import Cast from './Cast';
 import SimilarMovie from './SimilarMovie';
 import { Header } from '../components/Header';
+import ReleaseDate from '../components/ReleaseDate';
 
 
 class MovieDetail extends React.Component{
@@ -55,13 +56,12 @@ class MovieDetail extends React.Component{
                                     <span>{overview}</span>
                                 </div>
                             }
-                            {
-                                release_date &&
-                                <div className="ui inverted segment">
-                                    <h5>Preminär:</h5>
-                                    <span>{release_date}</span>
-                                </div>
-                            }
+                            
+                            <div className="ui inverted segment">
+                                <h5>Preminär:</h5>
+                                <span><ReleaseDate movieId={movieId} date={release_date}/></span>
+                            </div>
+
                             {
                                 runtime !== 0 &&
                                 <div className="ui inverted segment">

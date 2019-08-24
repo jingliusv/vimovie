@@ -1,5 +1,6 @@
 import React from 'react';
 import Video from '../components/Video';
+import ReleaseDate from '../components/ReleaseDate';
 
 export const HomeHeader = ({selectedMovie}) => {
     return(
@@ -16,7 +17,8 @@ export const HomeHeader = ({selectedMovie}) => {
                        
                     <h2>{selectedMovie.title}</h2>
                     <span className="header__icon">
-                        <i className="calendar alternate outline icon"></i>Preminär {selectedMovie.release_date}
+                        <i className="calendar alternate outline icon"></i>Preminär 
+                        <ReleaseDate movieId={selectedMovie.id} date={selectedMovie.release_date}/>
                     </span>
                     <p style={{ padding: "2rem 0" }}>{selectedMovie.overview}</p>
                                                          
