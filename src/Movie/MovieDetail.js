@@ -31,7 +31,7 @@ class MovieDetail extends React.Component{
     }
 
     render(){
-        const { title, overview, runtime, poster_path, homepage, genres, release_date } = this.state.movie;
+        const { title, overview, runtime, poster_path, homepage, genres } = this.state.movie;
 
         const { movieId, movie } = this.state;
 
@@ -59,7 +59,7 @@ class MovieDetail extends React.Component{
                             
                             <div className="ui inverted segment">
                                 <h5>Preminär:</h5>
-                                <span><ReleaseDate movieId={movieId} date={release_date}/></span>
+                                <span><ReleaseDate movieId={movieId}/></span>
                             </div>
 
                             {

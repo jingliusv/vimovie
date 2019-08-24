@@ -10,6 +10,7 @@ class ReleaseDate extends Component {
     componentDidMount(){
         if(this.props.movieId){
             this.getReleaseDate(this.props.movieId);
+            this.setState({ originalDate: this.props.date });
         }
     }
 
@@ -41,16 +42,24 @@ class ReleaseDate extends Component {
             })
 
             const date = data[0].release_dates[0].release_date;
-            const releaseDate = date.replace('T00:00:00.000Z', '');
+            const releaseDate = date.replace('T00:00:00.000Z', ' Sverige');
             // console.log(releaseDate)
             this.setState({ releaseDate });
         } else {
-            this.setState({ releaseDate: this.props.date })
+            data = res.data.results.filter(data => {
+                return data.iso_3166_1 === "US";
+            })
+
+            const date = data[0].release_dates[0].release_date;
+            const releaseDate = date.replace('T00:00:00.000Z', ' USA');
+            // console.log(releaseDate)
+            this.setState({ releaseDate });
         }
 
     }
 
     render() {
+
         return (
             <React.Fragment>
                 {this.state.releaseDate}
