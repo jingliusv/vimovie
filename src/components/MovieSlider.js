@@ -45,7 +45,7 @@ class MovieSlider extends Component {
                 {
                     movies &&
                     <div className="slider">
-                        <div className="slider-wrapper" style={{ transform: `translateX(-${sliderIndex * 100}%)`, transition: 'all .8s ease' }}>
+                        <div className="slider-wrapper" style={{ transform: `translateX(-${sliderIndex * 100}vw)`, transition: 'all .8s ease' }}>
                             {movies.map(movie => (
                                 <Movie key={movie.id} movie={movie} noTitle={true} />
                             ))}
