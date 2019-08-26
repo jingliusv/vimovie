@@ -5,6 +5,7 @@ import Home from './Home';
 import Movie from './Movie';
 import MovieDetail from './Movie/MovieDetail';
 import ScrollToTop from './components/ScrollToTop';
+import NowPlaying from './NowPlaying';
 
 class App extends React.Component{
     render(){
@@ -14,6 +15,7 @@ class App extends React.Component{
                     <ScrollToTop>
                         <Switch>
                             <Route path="/" exact component={Home} />
+                            <Route path="/nowplaying" component={NowPlaying} />
                             <Route path="/movie" exact component={Movie} />
                             <Route path="/movie/:movieId" exact render={(props) => <MovieDetail key={props.match.params.movieId} {...props} />} />
                         </Switch>

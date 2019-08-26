@@ -36,7 +36,7 @@ class Home extends React.Component{
         } else if(type === "top"){
             this.setState({ topMovies: res.data.results });
         } else if(type === "cinema"){
-            const movies = res.data.results.splice(0, 6);
+            const movies = res.data.results.splice(0, 5);
             this.setState({ moviesInCinema: movies });
             this.setState({ selectedMovie: movies[0] });
         }

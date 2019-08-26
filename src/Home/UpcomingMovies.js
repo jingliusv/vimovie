@@ -1,5 +1,6 @@
 import React from 'react';
 import Movie from '../components/Movie';
+import Fade from 'react-reveal/Fade';
 
 const UpcomingMovies = ({ upcomingMovies }) => {        
     return (
@@ -11,9 +12,11 @@ const UpcomingMovies = ({ upcomingMovies }) => {
                 upcomingMovies &&
                 <div className="ui grid upcoming">
                     {upcomingMovies.map(movie => (
-                        <div key={movie.id} className="four wide column">
-                            <Movie movie={movie} />
-                        </div> 
+                        <Fade bottom key={movie.id}>
+                            <div className="four wide column">
+                                <Movie movie={movie} />
+                            </div> 
+                        </Fade>
                     ))}    
                 </div>
             }
