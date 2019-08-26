@@ -61,7 +61,7 @@ class NowPlaying extends Component {
         const { movies, totalPages } = this.state;
  
         return (
-            <Fade right>
+            <Fade style={{overflowX: 'hidden'}} right>
                 <React.Fragment>
                     <div className="ui container">
                         <h3 style={{ paddingTop: '12rem', textAlign: 'center' }}>Alla filmer På Bio</h3>
