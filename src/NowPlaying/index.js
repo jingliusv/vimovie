@@ -80,7 +80,7 @@ class NowPlaying extends Component {
                             }
                                                 
                             <button
-                                className={ totalPages !== 0 ? 'btn--load' : 'btn--hide'}
+                                className={ totalPages > 0 ? 'btn--load' : 'btn--hide'}
                                 onClick={this.fetchMore}
                             >
                                 <i className="caret down icon"></i> Visa Fler  ({totalPages})<i className="caret down icon"></i>

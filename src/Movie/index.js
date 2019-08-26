@@ -89,7 +89,7 @@ class MoviePage extends React.Component{
                         }
                         { movies.length === 0 && <h5>Tyvärr, vi hittade inte filmer med texten "{searchTerm}".</h5> }                        
                         <button 
-                            className={ totalPages !== 0 ? 'btn--load' : 'btn--hide'} 
+                            className={ totalPages > 0 ? 'btn--load' : 'btn--hide'} 
                             onClick={() => isSearch ? this.fetchMore('/search/movie', searchTerm) : this.fetchMore('/movie/popular') }
                         >
                             <i className="caret down icon"></i> Visa Fler ({totalPages})  <i className="caret down icon"></i>
