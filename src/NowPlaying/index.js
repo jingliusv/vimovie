@@ -24,8 +24,8 @@ class NowPlaying extends Component {
             params:{
                 api_key: process.env.REACT_APP_THE_MOVIE_DB_API_KEY,
                 language: 'sv-SE',
-                page: `${startPage}`,
-                region: 'se'
+                page: `${startPage}`
+                // region: 'se'
             }
         });
 
@@ -48,8 +48,8 @@ class NowPlaying extends Component {
                 params:{
                     api_key: process.env.REACT_APP_THE_MOVIE_DB_API_KEY,
                     language: 'sv-SE',
-                    page: `${startPage}`,
-                    region: 'se'
+                    page: `${startPage}`
+                    // region: 'se'
                 }
             });
     
